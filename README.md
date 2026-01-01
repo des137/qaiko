@@ -1,4 +1,4 @@
-# My qaiko
+# Qaiko
 
 An example package to demonstrate PyPI uploads.
 
