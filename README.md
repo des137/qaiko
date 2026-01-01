@@ -9,7 +9,7 @@ pip install qaiko
 
 ## Usage
 ```python
-from my_awesome_package import greet
+from qaiko import greet
 
 print(greet("Python"))
 ```
