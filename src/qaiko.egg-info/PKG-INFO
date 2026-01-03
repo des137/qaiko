@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: qaiko
-Version: 0.1.0
+Version: 0.1.1
 Summary: A simple example package
 Author-email: Amol Deshmukh <amoldeshmukh@gmail.com>
 License: MIT
@@ -14,7 +14,7 @@ Description-Content-Type: text/markdown
 License-File: LICENCE
 Dynamic: license-file
 
-# My qaiko
+# Qaiko
 
 An example package to demonstrate PyPI uploads.
 
@@ -25,7 +25,7 @@ pip install qaiko
 
 ## Usage
 ```python
-from my_awesome_package import greet
+from qaiko import greet
 
 print(greet("Python"))
 ```
