@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qaiko"
-version = "0.1.1"
+version = "0.1.2"
 description = "A simple example package"
 readme = "README.md"
 authors = [
@@ -19,9 +19,25 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = []
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.1.0",
+]
+
 [project.urls]
 Homepage = "https://github.com/des137/qaiko"
 Repository = "https://github.com/des137/qaiko"
 
 [project.scripts]
 qaiko = "qaiko.main:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
